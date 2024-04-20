@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "Ground")
+		if (collision.gameObject.tag == "Ground" && collision.otherCollider.gameObject.tag == "PlayerFeet")
 		{
 			m_isGrounded = true;
 			Debug.Log("Player collided with " + collision.gameObject.tag.ToString());
@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
 
 	private void OnCollisionExit2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "Ground")
+		if (collision.gameObject.tag == "Ground" && collision.otherCollider.gameObject.tag == "PlayerFeet")
 		{
 			m_isGrounded = false;
 			Debug.Log("Player uncollided");
