@@ -458,6 +458,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &888728233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 3535142565643415159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &888728238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888728233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink
+  ItemLength: 1
+  ItemWidth: 1
 --- !u!1 &943741064
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +569,7 @@ GameObject:
   - component: {fileID: 1131726890}
   - component: {fileID: 1131726894}
   - component: {fileID: 1131726895}
+  - component: {fileID: 1131726896}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -689,6 +711,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1131726896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131726889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906cf7aeda3cd504a9756cf6d1f293d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251607533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1117,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 10858387965266980, guid: 111302ca55ea88649ba5b3c81b1255e1, type: 3}
   m_PrefabInstance: {fileID: 3497639054927292184}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3535142565643415159
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 888728238}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
 --- !u!1001 &7343272917560706057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1154,3 +1248,4 @@ SceneRoots:
   - {fileID: 1500560808}
   - {fileID: 1251607536}
   - {fileID: 7343272917560706057}
+  - {fileID: 3535142565643415159}

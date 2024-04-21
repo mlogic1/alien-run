@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - PlayerFeet
   - PlayerRest
+  - Item
   layers:
   - Default
   - TransparentFX

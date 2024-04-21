@@ -10,17 +10,18 @@ public class Player : MonoBehaviour
 	public float Velocity = 1.0f;
 	public float JumpStrength = 0.25f;
 
+	private Inventory m_inventory;
 	private Rigidbody2D m_body;
 	private Animator m_animator;
 	private bool m_isGrounded = false;
 	private float m_horizontalInput = .0f;
 
 
-
 	private void Awake()
 	{
 		m_body = GetComponent<Rigidbody2D>();
 		m_animator = GetComponent<Animator>();
+		m_inventory = GetComponent<Inventory>();
 	}
 
 	void Start()
@@ -93,5 +94,22 @@ public class Player : MonoBehaviour
 			m_isGrounded = false;
 			Debug.Log("Player uncollided");
 		}
+	}
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.gameObject.tag == "Item")
+		{
+			Debug.Log("Something something item: " + collision.gameObject.GetComponent<InventoryItem>().ItemName);
+			// collision.gameObject.dest
+			// store item in inventory
+			m_inventory.AddItem(collision.gameObject.GetComponent<InventoryItem>());
+			Destroy(collision.gameObject);
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		Debug.Log("Something something exit");
 	}
 }
