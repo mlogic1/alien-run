@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InventoryItem : MonoBehaviour
@@ -7,10 +8,11 @@ public class InventoryItem : MonoBehaviour
 
 	public string ItemName;
 
-	// item size for inventory
-	[Range(1, 6)]
-	public int ItemLength = 1;
+	public List<Vector2Int> ItemPositions;
 
-	[Range(1, 6)]
-	public int ItemWidth = 1;
+	// Since item pickup is based on CollisionBox2D's TriggerEnter function,
+	// multiple TriggerEnter can happen before the picked object is actually destroyed by Destroy().
+	// This bool is set to true immediately when an item gets added to Inventory so the same item does not get added twice by accident
+	[HideInInspector]
+	public bool IsCollected = false;
 }

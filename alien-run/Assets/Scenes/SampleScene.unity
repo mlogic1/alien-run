@@ -289,6 +289,88 @@ Transform:
   - {fileID: 3497639054927292185}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &359615526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 872101928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &359615527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359615526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink6
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
+--- !u!1001 &412591429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.487
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.297
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1071926323}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
 --- !u!1 &461203553
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +448,66 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.057907104, y: 0.68040603}
   m_EdgeRadius: 0
+--- !u!1001 &517874495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.496
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.096
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1569933905}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,6 +600,186 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &686360316
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.709
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.222
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1599766468}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+--- !u!1001 &757473137
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.971
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.194
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1109011815}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+--- !u!1001 &872101928
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.961
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.096
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 359615527}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
 --- !u!1 &888728233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
@@ -477,8 +799,88 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
   ItemName: DoughnutPink
-  ItemLength: 1
-  ItemWidth: 1
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
+--- !u!1 &900174375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 1279637667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &900174376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900174375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink5
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
+--- !u!1001 &906968900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0186424
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.109392
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
+      propertyPath: m_Name
+      value: ItemKeyGreen
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5ffbd9a4446d57749808049770eb71cc, type: 3}
 --- !u!1 &943741064
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +958,110 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64846087, y: 0.07570851}
   m_EdgeRadius: 0
+--- !u!1001 &986211562
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.551
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.135
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1955492533}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+--- !u!1 &1071926322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 412591429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1071926323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071926322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink8
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
+--- !u!1 &1109011814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 757473137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1109011815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109011814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink10
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
 --- !u!1 &1131726889
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,6 +1297,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1279637667
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.142
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 900174376}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
 --- !u!1 &1500560804
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +1459,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1510967415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 1732830216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1510967416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510967415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink4
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
 --- !u!1 &1525981058
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,6 +1558,132 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6576891, y: 0.04147452}
   m_EdgeRadius: 0
+--- !u!1 &1569933904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 517874495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1569933905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569933904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink3
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
+--- !u!1 &1599766467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 686360316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1599766468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599766467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink9
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
+--- !u!1001 &1732830216
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1510967416}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+--- !u!1 &1955492532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 986211562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1955492533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955492532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink7
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
 --- !u!1 &2083828944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1761,88 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.07429457, y: 0.693516}
   m_EdgeRadius: 0
+--- !u!1001 &2108537568
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.427
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.087
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571325506971551393, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      propertyPath: m_Name
+      value: ItemDoughnutPink (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2108537570}
+  m_SourcePrefab: {fileID: 100100000, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+--- !u!1 &2108537569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4895761449101663910, guid: bcb887cd81570e24d87ddc291f96862b, type: 3}
+  m_PrefabInstance: {fileID: 2108537568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2108537570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108537569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  ItemName: DoughnutPink2
+  ItemPositions:
+  - {x: 0, y: 0}
+  IsCollected: 0
 --- !u!1001 &3497639054927292184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1249,3 +2045,13 @@ SceneRoots:
   - {fileID: 1251607536}
   - {fileID: 7343272917560706057}
   - {fileID: 3535142565643415159}
+  - {fileID: 2108537568}
+  - {fileID: 517874495}
+  - {fileID: 1732830216}
+  - {fileID: 1279637667}
+  - {fileID: 872101928}
+  - {fileID: 986211562}
+  - {fileID: 412591429}
+  - {fileID: 686360316}
+  - {fileID: 757473137}
+  - {fileID: 906968900}

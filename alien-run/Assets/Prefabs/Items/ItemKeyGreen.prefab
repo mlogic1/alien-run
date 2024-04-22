@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 476274438159311118}
   - component: {fileID: -3102064568052248324}
   m_Layer: 0
-  m_Name: ItemDoughnutPink
+  m_Name: ItemKeyGreen
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 427119243b2f70d4ebe0d405ac03cee7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -140,18 +140,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.009372443, y: -0.018744946}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.36, y: 1.36}
+    oldSize: {x: 1.63, y: 0.97}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.36, y: 1.36}
+  m_Size: {x: 1.7536416, y: 1.1350627}
   m_EdgeRadius: 0
 --- !u!114 &-3102064568052248324
 MonoBehaviour:
@@ -165,8 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ec891a64ca678469364a76285a6e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventoryImage: {fileID: 2800000, guid: 15432c2a5b47c144bb5dbaa20f6add7a, type: 3}
-  ItemName: DoughnutPink
+  InventoryImage: {fileID: 2800000, guid: 427119243b2f70d4ebe0d405ac03cee7, type: 3}
+  ItemName: KeyGreen
   ItemPositions:
   - {x: 0, y: 0}
+  - {x: 0, y: 1}
   IsCollected: 0

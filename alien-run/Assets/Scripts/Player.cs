@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -103,8 +104,15 @@ public class Player : MonoBehaviour
 			Debug.Log("Something something item: " + collision.gameObject.GetComponent<InventoryItem>().ItemName);
 			// collision.gameObject.dest
 			// store item in inventory
-			m_inventory.AddItem(collision.gameObject.GetComponent<InventoryItem>());
-			Destroy(collision.gameObject);
+			InventoryItem item = collision.gameObject.GetComponent<InventoryItem>();
+			if (!item.IsCollected)
+			{
+				if (m_inventory.AddItem(item))
+				{
+					item.IsCollected = true;
+					Destroy(collision.gameObject);
+				}
+			}
 		}
 	}
 
