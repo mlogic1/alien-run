@@ -46,6 +46,16 @@ public class Inventory : MonoBehaviour
 		return true;
 	}
 
+	public Dictionary<InventoryItem, Vector2Int> GetInventoryItems() 
+	{
+		return m_inventoryItemPositions;
+	}
+
+	public int GetInventoryItemCount()
+	{
+		return m_inventoryItems.Count;
+	}
+
 	public bool CanItemBePlaced(InventoryItem item, Vector2Int position)
 	{
 		foreach(Vector2Int itemBlock in item.ItemPositions)

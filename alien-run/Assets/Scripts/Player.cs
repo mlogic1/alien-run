@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
 	private bool m_isGrounded = false;
 	private float m_horizontalInput = .0f;
 
-
 	private void Awake()
 	{
 		m_body = GetComponent<Rigidbody2D>();
