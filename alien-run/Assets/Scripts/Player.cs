@@ -43,17 +43,6 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
-		m_horizontalInput = Input.GetAxis("Horizontal");
-		WriteDebugData();
-		m_body.velocity = new Vector2(m_horizontalInput * Velocity, m_body.velocity.y);
-
-		if (Input.GetKey(KeyCode.Space) && m_isGrounded)// || Input.GetButton("JUMP"))
-		{
-			// m_body.AddForce(new Vector2(0, 0.15f), ForceMode2D.Impulse);
-			m_body.velocity += JumpStrength * Vector2.up;
-			m_isGrounded = false;
-		}
-
 		// flip character left or right
 		if (m_horizontalInput > 0.0f)
 		{
@@ -65,6 +54,20 @@ public class Player : MonoBehaviour
 		}
 
 		UpdateAnimator();
+	}
+
+	private void FixedUpdate()
+	{
+		m_horizontalInput = Input.GetAxis("Horizontal");
+		WriteDebugData();
+		m_body.velocity = new Vector2(m_horizontalInput * Velocity, m_body.velocity.y);
+
+		if (Input.GetKey(KeyCode.Space) && m_isGrounded)// || Input.GetButton("JUMP"))
+		{
+			// m_body.AddForce(new Vector2(0, 0.15f), ForceMode2D.Impulse);
+			m_body.velocity += JumpStrength * Vector2.up;
+			m_isGrounded = false;
+		}
 	}
 
 	private void UpdateAnimator()
@@ -89,19 +92,18 @@ public class Player : MonoBehaviour
 
 	private void OnCollisionExit2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "Ground" && collision.otherCollider.gameObject.tag == "PlayerFeet")
-		{
-			m_isGrounded = false;
-			Debug.Log("Player uncollided");
-		}
+
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
+		if (collision.gameObject.tag == "Tilemap")
+		{
+			m_isGrounded = true;
+		}
+		
 		if (collision.gameObject.tag == "Item")
 		{
-			Debug.Log("Something something item: " + collision.gameObject.GetComponent<InventoryItem>().ItemName);
-			// collision.gameObject.dest
 			// store item in inventory
 			InventoryItem item = collision.gameObject.GetComponent<InventoryItem>();
 			if (!item.IsCollected)
@@ -117,6 +119,9 @@ public class Player : MonoBehaviour
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		Debug.Log("Something something exit");
+		if (collision.gameObject.tag == "Tilemap")
+		{
+			m_isGrounded = false;
+		}
 	}
 }
