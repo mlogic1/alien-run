@@ -9,6 +9,7 @@ TagManager:
   - PlayerFeet
   - PlayerRest
   - Item
+  - Tilemap
   layers:
   - Default
   - TransparentFX
