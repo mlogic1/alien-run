@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class Player : MonoBehaviour
 		}
 
 		string debugText = "Horizontal input: " + m_horizontalInput.ToString() + "\r\n";
-		debugText += "Is Gounded: " + m_isGrounded;
+		debugText += "Is Gounded: " + m_isGrounded + "\r\n";
 		DebugTextComponent.SetText(debugText);
 	}
 
@@ -58,16 +59,8 @@ public class Player : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		m_horizontalInput = Input.GetAxis("Horizontal");
 		WriteDebugData();
 		m_body.velocity = new Vector2(m_horizontalInput * Velocity, m_body.velocity.y);
-
-		if (Input.GetKey(KeyCode.Space) && m_isGrounded)// || Input.GetButton("JUMP"))
-		{
-			// m_body.AddForce(new Vector2(0, 0.15f), ForceMode2D.Impulse);
-			m_body.velocity += JumpStrength * Vector2.up;
-			m_isGrounded = false;
-		}
 	}
 
 	private void UpdateAnimator()
@@ -122,6 +115,28 @@ public class Player : MonoBehaviour
 		if (collision.gameObject.tag == "Tilemap")
 		{
 			m_isGrounded = false;
+		}
+	}
+
+	public void Jump()
+	{
+		if (m_isGrounded)
+		{
+			// m_body.AddForce(new Vector2(0, 0.15f), ForceMode2D.Impulse);
+			m_body.velocity += JumpStrength * Vector2.up;
+			m_isGrounded = false;
+		}
+	}
+
+	public void Move(InputAction.CallbackContext context)
+	{
+		if (context.started || context.performed)
+		{
+			m_horizontalInput = context.ReadValue<float>();
+		}
+		else if (context.canceled)
+		{
+			m_horizontalInput = 0.0f;
 		}
 	}
 }

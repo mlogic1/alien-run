@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.U2D;
 using UnityEngine.UI;
 
-public class MinigameController : MonoBehaviour
+public class MinigameController : MonoBehaviour, IInputReceiver
 {
+	public InputManager InputManager;
 	public Transform ArrowElementContainer;
 	public MinigameChest Chest;
 
@@ -29,8 +29,9 @@ public class MinigameController : MonoBehaviour
 	private List<ArrowDirection> m_gameSequence;
 	private int m_currentIndex = 0;
 
-	public void StartMinigame()
+	private void StartMinigame()
 	{
+		string secret = "";
 		m_gameSequence = new List<ArrowDirection>();
 		m_currentIndex = 0;
 		// generate 10 random sequences
@@ -39,7 +40,11 @@ public class MinigameController : MonoBehaviour
 			int randIndex = Random.Range(0, 3);
 			KeyValuePair<ArrowDirection, Sprite> randomArrow = m_arrowTextureDict.ElementAt(randIndex);
 			m_gameSequence.Add(randomArrow.Key);
-		}	
+
+			secret += randomArrow.Key.ToString() + " ";
+		}
+
+		Debug.LogWarning("Secret: " + secret);
 	}
 
 	private void Awake()
@@ -60,11 +65,20 @@ public class MinigameController : MonoBehaviour
 		m_arrowTextureDict.Add(ArrowDirection.DOWN, TextureArrowDown);
 		m_arrowTextureDict.Add(ArrowDirection.LEFT, TextureArrowLeft);
 		m_arrowTextureDict.Add(ArrowDirection.RIGHT, TextureArrowRight);
+
+		StartMinigame();
 	}
 
-	void Start()
+	public void ShowWindow()
 	{
-		StartMinigame();
+		gameObject.SetActive(true);
+		InputManager.TakeInput(this);
+	}
+
+	public void HideWindow()
+	{
+		gameObject.SetActive(false);
+		InputManager.ReleaseInput(this);
 	}
 
 	private void HideSequence()
@@ -75,7 +89,7 @@ public class MinigameController : MonoBehaviour
 		}
 	}
 
-	private void OnInputReceived(ArrowDirection arrowDirection)
+	private void ProcessInput(ArrowDirection arrowDirection)
 	{
 		if (m_gameSequence[m_currentIndex] == arrowDirection)
 		{
@@ -85,6 +99,7 @@ public class MinigameController : MonoBehaviour
 			if (m_currentIndex == SequenceCount)
 			{
 				Chest.OnPlayerWin();
+				InputManager.ReleaseInput(this);
 				Destroy(this.gameObject);
 			}
 		}
@@ -97,24 +112,35 @@ public class MinigameController : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.UpArrow))
-		{
-			OnInputReceived(ArrowDirection.UP);
-		}
 
-		if (Input.GetKeyDown(KeyCode.DownArrow))
-		{
-			OnInputReceived(ArrowDirection.DOWN);
-		}
+	}
 
-		if (Input.GetKeyDown(KeyCode.LeftArrow))
+	public void OnReceiveInputDirectional(DirectionalInput directionalInput)
+	{
+		switch (directionalInput)
 		{
-			OnInputReceived(ArrowDirection.LEFT);
+			case DirectionalInput.UP:
+				ProcessInput(ArrowDirection.UP);
+				break;
+			case DirectionalInput.DOWN:
+				ProcessInput(ArrowDirection.DOWN);
+				break;
+			case DirectionalInput.LEFT:
+				ProcessInput(ArrowDirection.LEFT);
+				break;
+			case DirectionalInput.RIGHT:
+				ProcessInput(ArrowDirection.RIGHT);
+				break;
 		}
+	}
 
-		if (Input.GetKeyDown(KeyCode.RightArrow))
-		{
-			OnInputReceived(ArrowDirection.RIGHT);
-		}
+	public void OnReceiveInputAction()
+	{
+		
+	}
+
+	public void OnReceiveInputCancel()
+	{
+		HideWindow();
 	}
 }

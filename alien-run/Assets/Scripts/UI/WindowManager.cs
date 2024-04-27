@@ -9,7 +9,7 @@ public class WindowManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Awake()
 	{
-		InventoryWindow.InitializeWindow(PlayerInventory);
+		// InventoryWindow.InitializeWindow(PlayerInventory);
 	}
 
 	void Update()

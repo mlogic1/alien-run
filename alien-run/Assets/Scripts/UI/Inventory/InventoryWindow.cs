@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [Serializable]
 public struct InventoryItemView
@@ -11,16 +12,18 @@ public struct InventoryItemView
 	public GameObject Prefab;
 }
 
-public class InventoryWindow : MonoBehaviour
+public class InventoryWindow : MonoBehaviour, IInputReceiver
 {
 	public List<InventoryItemView> InventoryItemViews;
 	public GameObject ContentContainer;
 
-	private Inventory m_inventoryRef;
+	private Inventory m_inventoryRef; // rename this..
+	private InputManager m_inputManager;
 	private int m_lastInventoryItemCount = 0;
 
-	public void InitializeWindow(Inventory inventory)
+	public void InitializeWindow(InputManager inputManager, Inventory inventory)
 	{
+		m_inputManager = inputManager;
 		m_inventoryRef = inventory;
 	}
 
@@ -79,5 +82,22 @@ public class InventoryWindow : MonoBehaviour
 			m_lastInventoryItemCount = currentInventoryItemCount;
 			Refresh();
 		}
+	}
+
+	public void OnReceiveInputDirectional(DirectionalInput directionalInput)
+	{
+		Debug.Log("Important input in inventory window");
+	}
+
+	public void OnReceiveInputAction()
+	{
+		Debug.Log("TODO: Implement action");
+	}
+
+	public void OnReceiveInputCancel()
+	{
+		// Close the inventory window
+		m_inputManager.ReleaseInput(this);
+		gameObject.SetActive(false);
 	}
 }

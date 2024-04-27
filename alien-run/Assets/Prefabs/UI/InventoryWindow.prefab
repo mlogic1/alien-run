@@ -2026,6 +2026,8 @@ MonoBehaviour:
     Prefab: {fileID: 3070529862321176418, guid: eb7eac792a9c06b4e8b7b2a5ff887600, type: 3}
   - ItemName: DoughnutPink
     Prefab: {fileID: 4926486724833309827, guid: c73ca94d0cb67264098664e3b1b1b4f6, type: 3}
+  - ItemName: TripleBoneKey
+    Prefab: {fileID: 3070529862321176418, guid: a86b0ebd89f7a2e41bb4e21b2c676971, type: 3}
   ContentContainer: {fileID: 8950184610462465765}
 --- !u!1 &5549520222596471076
 GameObject:
@@ -2088,7 +2090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3176,7 +3178,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -52.70996}
-  m_SizeDelta: {x: 952.0786, y: 0.41999817}
+  m_SizeDelta: {x: 952.0786, y: 75.9253}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &7773959552415864229
 CanvasRenderer:
@@ -3215,8 +3217,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

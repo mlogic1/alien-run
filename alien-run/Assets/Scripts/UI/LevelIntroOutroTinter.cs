@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LevelIntroOutroTinter : MonoBehaviour
 {
-	public bool HideGameViewport = true; // Whether the script removes the tint or brings it back
+	public bool HideTint = true; // Whether the script hides the tint or brings it back
 	private Image m_imageComponent;
 
 	public float TintSpeed = 6.0f;
@@ -16,11 +16,21 @@ public class LevelIntroOutroTinter : MonoBehaviour
 		m_imageComponent.enabled = true;
 	}
 
+	public void HideLevelTint()
+	{
+		HideTint = true;
+	}
+
+	public void ShowLevelTint()
+	{
+		HideTint = false;
+	}
+
 	void Update()
 	{
 		float targetAlpha = 1.0f;
 		float currentAlpha = m_imageComponent.color.a;
-		if (HideGameViewport)
+		if (HideTint)
 		{
 			targetAlpha = 0.0f;
 		}
