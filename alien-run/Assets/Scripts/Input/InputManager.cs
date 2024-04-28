@@ -66,7 +66,6 @@ public class InputManager : MonoBehaviour
 	{
 		if (context.started)
 		{
-			Debug.Log("ShowHideInventory");
 			if (!InventoryWindow.gameObject.activeSelf)
 			{
 				TakeInput(InventoryWindow);

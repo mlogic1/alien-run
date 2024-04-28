@@ -44,7 +44,7 @@ public class MinigameController : MonoBehaviour, IInputReceiver
 			secret += randomArrow.Key.ToString() + " ";
 		}
 
-		Debug.LogWarning("Secret: " + secret);
+		// Debug.LogWarning("Secret: " + secret); // uncomment this to see the solution in the log
 	}
 
 	private void Awake()

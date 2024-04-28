@@ -8,7 +8,6 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-	public TextMeshProUGUI DebugTextComponent;
 	public float Velocity = 1.0f;
 	public float JumpStrength = 0.25f;
 
@@ -30,18 +29,6 @@ public class Player : MonoBehaviour
 		m_body.freezeRotation = true;
 	}
 
-	private void WriteDebugData()
-	{
-		if (DebugTextComponent == null) 
-		{
-			return;
-		}
-
-		string debugText = "Horizontal input: " + m_horizontalInput.ToString() + "\r\n";
-		debugText += "Is Gounded: " + m_isGrounded + "\r\n";
-		DebugTextComponent.SetText(debugText);
-	}
-
 	void Update()
 	{
 		// flip character left or right
@@ -59,7 +46,6 @@ public class Player : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		WriteDebugData();
 		m_body.velocity = new Vector2(m_horizontalInput * Velocity, m_body.velocity.y);
 	}
 

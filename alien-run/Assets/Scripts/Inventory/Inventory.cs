@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 // Inventory System
 // A grid based item container
@@ -44,6 +45,22 @@ public class Inventory : MonoBehaviour
 		m_inventoryItems.Add(item);
 		m_inventoryItemPositions.Add(item, pos);
 		return true;
+	}
+
+	public bool MoveItem(InventoryItem item, Vector2Int position)
+	{
+		if (!m_inventoryItems.Contains(item))
+		{
+			return false; // inventory does not contain this item, function call is not valid
+		}
+
+		if (CanItemBePlaced(item, position))
+		{
+			m_inventoryItemPositions[item] = position;
+			return true;
+		}
+
+		return false;	// that slot is taken or item is too big and goes out of bounds
 	}
 
 	public Dictionary<InventoryItem, Vector2Int> GetInventoryItems() 
