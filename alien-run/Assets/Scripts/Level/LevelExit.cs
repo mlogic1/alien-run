@@ -20,7 +20,7 @@ public class LevelExit : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "PlayerFeet")
 		{
-			// TODO: Disable all controls
+			// TODO: Player controls should be disabled here
 			Tint.ShowLevelTint();
 			StartCoroutine(DelayedSceneSwitch());
 		}

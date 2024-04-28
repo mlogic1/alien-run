@@ -9,21 +9,12 @@ public class InventorySlotItemView : MonoBehaviour
 	public List<Image> HightlightImages;
 	private IInventoryWindow m_inventoryWindow;
 
+	// Colors were planned to be used on the inventory window as a highlight if an item can be placed in a certain slot or not
+	// But were not implemented yet
 	private Color m_colorGreen = new Color(27, 255, 6, 11);
 	private Color m_colorRed = new Color(255, 7, 7, 11);
 	private Color m_colorNeutral = new Color(255, 255, 255, 11);
 	private Color m_colorHidden = new Color(255, 255, 255, 0);
-	
-
-	/*public void OnPointerEnter(PointerEventData eventData)
-	{
-        Debug.Log("new new Pointer enter item: ");
-	}
-
-	public void OnPointerExit(PointerEventData eventData)
-	{
-		Debug.Log("new new Pointer exit item");
-	}*/
 
 	public void Initialize(IInventoryWindow inventoryWindow)
     {

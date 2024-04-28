@@ -6,11 +6,6 @@ public class WindowManager : MonoBehaviour
 {
 	public InventoryWindow InventoryWindow;
 	public Inventory PlayerInventory;
-	// Start is called before the first frame update
-	void Awake()
-	{
-		// InventoryWindow.InitializeWindow(PlayerInventory);
-	}
 
 	void Update()
 	{

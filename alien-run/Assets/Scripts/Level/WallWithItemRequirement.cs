@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class WallWithItemRequirement : MonoBehaviour
@@ -49,11 +45,5 @@ public class WallWithItemRequirement : MonoBehaviour
 				HintPopup.SetActive(false);
 			}
 		}
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-		
 	}
 }

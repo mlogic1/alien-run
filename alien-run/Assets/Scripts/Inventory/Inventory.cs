@@ -1,10 +1,17 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 // Inventory System
 // A grid based item container
+// Items are defined by a unique Name and a shape.
+
+// Shape defines how many and which slots an item takes up. Shape is an array of { X, Y } indicies,
+// and of course, every item needs to have at least the 1 shape point {0, 0} defined.
+// for instance, a T shaped item which takes 4 slots would be defined as:
+// Vector2[] =	{
+//					{ 0,0 } ,	{0, 1},		{ 0,2 },
+//								{1 ,1},
+//				}
 
 public class Inventory : MonoBehaviour
 {
@@ -41,7 +48,7 @@ public class Inventory : MonoBehaviour
 			return false;
 		}
 		
-		Debug.LogWarning("player added item to inventory: " + item.ItemName + ". At position: " + pos.ToString());
+		// Debug.LogWarning("player added item to inventory: " + item.ItemName + ". At position: " + pos.ToString());
 		m_inventoryItems.Add(item);
 		m_inventoryItemPositions.Add(item, pos);
 		return true;

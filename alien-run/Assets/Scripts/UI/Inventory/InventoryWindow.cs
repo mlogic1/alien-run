@@ -17,10 +17,10 @@ public struct InventoryItemView
 
 public class InventoryWindow : MonoBehaviour, IInputReceiver, IInventoryWindow
 {
-	public List<InventoryItemView> InventoryItemViews;	// Map of item id's and its respective UI inventory slot prefabs
+	public List<InventoryItemView> InventoryItemViews;	// Map of item ids and its respective UI inventory slot prefabs
 	public GameObject ContentContainer;
 
-	private Inventory m_inventoryRef; // rename this..
+	private Inventory m_inventoryRef;
 	private InputManager m_inputManager;
 	private int m_lastInventoryItemCount = 0;
 	private Dictionary<InventorySlotItemView, InventoryItem> m_instantiatedViews = new Dictionary<InventorySlotItemView, InventoryItem>();
@@ -75,7 +75,6 @@ public class InventoryWindow : MonoBehaviour, IInputReceiver, IInventoryWindow
 		}
 	}
 
-	// Start is called before the first frame update
 	void Awake()
 	{
 		ClearContentContainer();
@@ -92,6 +91,12 @@ public class InventoryWindow : MonoBehaviour, IInputReceiver, IInventoryWindow
 
 		if (m_currentlyDraggedObject != null)
 		{
+			// Brief explanation of this logic:
+			// Check if hovering over a slot.
+			// If yes, check if item can be placed there
+			//		If yes, hover item over that slot
+			//		if not, hover item over that slot but in red (coloring is not implemented yet)
+			// if no, hover the item behind the mouse
 			bool itemHoveringASlot = false;
 			foreach (RectTransform slot in ContentContainer.transform)
 			{
@@ -126,11 +131,6 @@ public class InventoryWindow : MonoBehaviour, IInputReceiver, IInventoryWindow
 				// item should just hover and follow the cursor
 				m_currentlyDraggedObject.transform.position = Input.mousePosition;
 			}
-			// Check if hovering over a slot.
-			// If yes, check if item can be placed there
-			//		If yes, hover item over that slot
-			//		if not, hover item over that slot but in red
-			// if no, hover the item behind the mouse
 		}
 	}
 

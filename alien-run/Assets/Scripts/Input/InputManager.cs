@@ -73,6 +73,7 @@ public class InputManager : MonoBehaviour
 		}
 	}
 
+	// Directional action are DPad and WASD keys
 	public void OnDirectionalActionButton(InputAction.CallbackContext context)
 	{
 		if (context.performed)
@@ -81,7 +82,7 @@ public class InputManager : MonoBehaviour
 			
 			if (controlShortName == null)
 			{
-				// input comes from keyboard. I was having issues with ReadValue<Vector2>() always resulting in (0,0), but due to time constraints i didn't 
+				// This input action comes from the keyboard. I was having issues with ReadValue<Vector2>() always resulting in (0,0), but due to time constraints i didn't 
 				// debug it further. So finally I resolved it dirty like this
 				switch(context.control.name)
 				{
@@ -102,8 +103,8 @@ public class InputManager : MonoBehaviour
 				}
 			}
 
-			if (controlShortName.Equals("D-Pad Up"))										 // a dictionary could map these string to enum conversions, but no need 
-			{                                                                               // to overcomplicate such a simple scenario
+			if (controlShortName.Equals("D-Pad Up"))										// a dictionary could map these string to enum conversions, but no need 
+			{																				// to overcomplicate such a simple scenario
 				m_currentInputReceiver.OnReceiveInputDirectional(DirectionalInput.UP);
 			}
 			else if (controlShortName.Equals("D-Pad Down"))

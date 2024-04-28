@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -57,7 +52,7 @@ public class Player : MonoBehaviour
 			m_animator.SetBool("IsMoving", !Mathf.Approximately(m_horizontalInput, 0.0f));
 		}
 
-		m_animator.SetBool("IsGrounded", m_isGrounded); // player is in the air
+		m_animator.SetBool("IsGrounded", m_isGrounded); // player is grounded (not jumping or falling)
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
@@ -113,7 +108,7 @@ public class Player : MonoBehaviour
 	{
 		if (m_isGrounded)
 		{
-			// m_body.AddForce(new Vector2(0, 0.15f), ForceMode2D.Impulse);
+			m_body.velocity = new Vector2(m_body.velocity.x, 0.0f); // reset player Y velocity. Otherwise the player can achieve higher jumps if walking diagonally
 			m_body.velocity += JumpStrength * Vector2.up;
 			m_isGrounded = false;
 		}

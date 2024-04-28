@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 // CameraMovement is a script which moves (lerps) the camera after the TrackedObject
