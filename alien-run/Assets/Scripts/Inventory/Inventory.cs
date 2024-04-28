@@ -47,6 +47,18 @@ public class Inventory : MonoBehaviour
 		return true;
 	}
 
+	public bool HasItem(string itemName)
+	{
+		foreach (InventoryItem item in m_inventoryItems)
+		{
+			if (item.ItemName == itemName)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
 	public bool MoveItem(InventoryItem item, Vector2Int position)
 	{
 		if (!m_inventoryItems.Contains(item))

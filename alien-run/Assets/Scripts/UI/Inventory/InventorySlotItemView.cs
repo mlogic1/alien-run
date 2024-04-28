@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class InventorySlotItemView : MonoBehaviour
 {
 	public List<Image> HightlightImages;
-    private IInventoryWindow m_inventoryWindow;
-	private bool m_isSelected = false;
+	private IInventoryWindow m_inventoryWindow;
 
 	private Color m_colorGreen = new Color(27, 255, 6, 11);
 	private Color m_colorRed = new Color(255, 7, 7, 11);
@@ -75,12 +74,12 @@ public class InventorySlotItemView : MonoBehaviour
 
 	public void OnSelectableAreaEnter()
 	{
-		m_isSelected = true;
+		
 	}
 
 	public void OnSelectableAreaExit()
 	{
-		m_isSelected = false;
+		
 	}
 
 	public void OnSelectedAreaClicked()
