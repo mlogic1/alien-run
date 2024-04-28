@@ -5,19 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/InventoryTest.unity
-    guid: bca0fd356d9f0a546987955b07a5b4a8
-  - enabled: 0
-    path: Assets/Scenes/Level_Grassy_Old.unity
-    guid: f19f3060f0051d342836db2b2d5a82a1
-  - enabled: 1
-    path: Assets/Scenes/Level_Snowy.unity
-    guid: d1c8b5edd73f18a429011e307b9369e9
   - enabled: 1
     path: Assets/Scenes/Level_Grassy.unity
     guid: 8ad7f50effe3864479ab5c78303432de
+  - enabled: 1
+    path: Assets/Scenes/Level_Snowy.unity
+    guid: d1c8b5edd73f18a429011e307b9369e9
   m_configObjects: {}

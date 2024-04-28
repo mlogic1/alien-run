@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 476274438159311118}
   - component: {fileID: -3102064568052248324}
   m_Layer: 0
-  m_Name: ItemKeyGreen
+  m_Name: ItemKeyGreen-NOT_USED
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

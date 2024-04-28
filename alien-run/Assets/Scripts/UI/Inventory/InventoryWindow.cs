@@ -64,10 +64,8 @@ public class InventoryWindow : MonoBehaviour, IInputReceiver, IInventoryWindow
 				{
 					if (slotView.SlotIndex == itemInInventory.Value)
 					{
-						Debug.Log("ready to spawn prefab: " + prefabtoSpawn + "at: " + itemInInventory.Value.ToString());
 						GameObject itemView = Instantiate(prefabtoSpawn, slotView.gameObject.transform);
 						
-
 						InventorySlotItemView viewScript = itemView.GetComponent<InventorySlotItemView>();
 						viewScript.Initialize(this);
 						m_instantiatedViews.Add(viewScript, itemInInventory.Key);

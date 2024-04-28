@@ -9,7 +9,6 @@ using UnityEngine.InputSystem;
 // This can be a popup window, pause menu, dialog etc...
 // To give input back to the character the system can call ReleaseInput
 
-
 public class InputManager : MonoBehaviour
 {
 	public Player Player;
